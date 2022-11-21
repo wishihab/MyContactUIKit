@@ -274,11 +274,11 @@ class DetailViewController: UIViewController {
         headerImageView.heightAnchor.constraint(equalToConstant: 300).isActive = true
         
         nameText.text = fullName
-        nameText.topAnchor.constraint(equalTo: headerImageView.bottomAnchor, constant: 10).isActive = true
+        nameText.topAnchor.constraint(equalTo: headerImageView.bottomAnchor, constant: 15).isActive = true
         nameText.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         nameText.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         
-        genderLabel.bottomAnchor.constraint(equalTo: nameText.bottomAnchor, constant: 20).isActive = true
+        genderLabel.bottomAnchor.constraint(equalTo: nameText.bottomAnchor, constant: 25).isActive = true
         genderLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         genderLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         

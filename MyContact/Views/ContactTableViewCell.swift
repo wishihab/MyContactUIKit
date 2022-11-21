@@ -50,6 +50,7 @@ class ContactTableViewCell: UITableViewCell {
         
         //create custom constraints
         applyConstraints()
+        contactPictureImageView.layer.cornerRadius = 20
     }
     
     required init?(coder: NSCoder) {
