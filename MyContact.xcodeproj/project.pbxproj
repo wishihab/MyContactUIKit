@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		0846F0B929276CBB001FA960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0B829276CBB001FA960 /* AppDelegate.swift */; };
 		0846F0BB29276CBB001FA960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0BA29276CBB001FA960 /* SceneDelegate.swift */; };
-		0846F0BD29276CBB001FA960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0BC29276CBB001FA960 /* ViewController.swift */; };
-		0846F0C029276CBB001FA960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0846F0BE29276CBB001FA960 /* Main.storyboard */; };
+		0846F0BD29276CBB001FA960 /* KontakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0BC29276CBB001FA960 /* KontakViewController.swift */; };
 		0846F0C229276CBC001FA960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0846F0C129276CBC001FA960 /* Assets.xcassets */; };
-		0846F0C529276CBC001FA960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0846F0C329276CBC001FA960 /* LaunchScreen.storyboard */; };
 		0846F0D029276CBC001FA960 /* MyContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0CF29276CBC001FA960 /* MyContactTests.swift */; };
 		0846F0DA29276CBC001FA960 /* MyContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0D929276CBC001FA960 /* MyContactUITests.swift */; };
 		0846F0DC29276CBC001FA960 /* MyContactUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0DB29276CBC001FA960 /* MyContactUITestsLaunchTests.swift */; };
+		0846F0EA29276D47001FA960 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0846F0E929276D47001FA960 /* SDWebImage */; };
+		0846F0EC29276D47001FA960 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0846F0EB29276D47001FA960 /* SDWebImageMapKit */; };
+		0846F0F429276DBD001FA960 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0F329276DBD001FA960 /* Contacts.swift */; };
+		0846F0F629276E08001FA960 /* APICallerNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0F529276E08001FA960 /* APICallerNative.swift */; };
+		0846F0F829276F1F001FA960 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0F729276F1F001FA960 /* ContactTableViewCell.swift */; };
+		0846F0FA29276F39001FA960 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0F929276F39001FA960 /* ContactViewModel.swift */; };
+		0846F0FC29276F51001FA960 /* DetailContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0FB29276F51001FA960 /* DetailContactViewModel.swift */; };
+		0846F0FE29276F9C001FA960 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0FD29276F9C001FA960 /* DetailViewController.swift */; };
+		0846F10029277195001FA960 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F0FF29277195001FA960 /* MainViewController.swift */; };
+		0846F1032927758A001FA960 /* OpenMapDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0846F1022927758A001FA960 /* OpenMapDirections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +47,22 @@
 		0846F0B529276CBB001FA960 /* MyContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0846F0B829276CBB001FA960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0846F0BA29276CBB001FA960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0846F0BC29276CBB001FA960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0846F0BF29276CBB001FA960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0846F0BC29276CBB001FA960 /* KontakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontakViewController.swift; sourceTree = "<group>"; };
 		0846F0C129276CBC001FA960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0846F0C429276CBC001FA960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0846F0C629276CBC001FA960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0846F0CB29276CBC001FA960 /* MyContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyContactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0846F0CF29276CBC001FA960 /* MyContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContactTests.swift; sourceTree = "<group>"; };
 		0846F0D529276CBC001FA960 /* MyContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyContactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0846F0D929276CBC001FA960 /* MyContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContactUITests.swift; sourceTree = "<group>"; };
 		0846F0DB29276CBC001FA960 /* MyContactUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContactUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0846F0F329276DBD001FA960 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		0846F0F529276E08001FA960 /* APICallerNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallerNative.swift; sourceTree = "<group>"; };
+		0846F0F729276F1F001FA960 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		0846F0F929276F39001FA960 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		0846F0FB29276F51001FA960 /* DetailContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactViewModel.swift; sourceTree = "<group>"; };
+		0846F0FD29276F9C001FA960 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0846F0FF29277195001FA960 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0846F1022927758A001FA960 /* OpenMapDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMapDirections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0846F0EC29276D47001FA960 /* SDWebImageMapKit in Frameworks */,
+				0846F0EA29276D47001FA960 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +115,14 @@
 		0846F0B729276CBB001FA960 /* MyContact */ = {
 			isa = PBXGroup;
 			children = (
-				0846F0B829276CBB001FA960 /* AppDelegate.swift */,
-				0846F0BA29276CBB001FA960 /* SceneDelegate.swift */,
-				0846F0BC29276CBB001FA960 /* ViewController.swift */,
-				0846F0BE29276CBB001FA960 /* Main.storyboard */,
+				0846F1012927757D001FA960 /* Utils */,
+				0846F0ED29276D4D001FA960 /* Resources */,
+				0846F0EF29276D60001FA960 /* Models */,
+				0846F0EE29276D55001FA960 /* Managers */,
+				0846F0F029276D67001FA960 /* Views */,
+				0846F0F129276D71001FA960 /* ViewModels */,
+				0846F0F229276D79001FA960 /* Controllers */,
 				0846F0C129276CBC001FA960 /* Assets.xcassets */,
-				0846F0C329276CBC001FA960 /* LaunchScreen.storyboard */,
 				0846F0C629276CBC001FA960 /* Info.plist */,
 			);
 			path = MyContact;
@@ -127,6 +145,66 @@
 			path = MyContactUITests;
 			sourceTree = "<group>";
 		};
+		0846F0ED29276D4D001FA960 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0846F0B829276CBB001FA960 /* AppDelegate.swift */,
+				0846F0BA29276CBB001FA960 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0846F0EE29276D55001FA960 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0846F0F529276E08001FA960 /* APICallerNative.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0846F0EF29276D60001FA960 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0846F0F329276DBD001FA960 /* Contacts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0846F0F029276D67001FA960 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0846F0F729276F1F001FA960 /* ContactTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0846F0F129276D71001FA960 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0846F0F929276F39001FA960 /* ContactViewModel.swift */,
+				0846F0FB29276F51001FA960 /* DetailContactViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0846F0F229276D79001FA960 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0846F0BC29276CBB001FA960 /* KontakViewController.swift */,
+				0846F0FD29276F9C001FA960 /* DetailViewController.swift */,
+				0846F0FF29277195001FA960 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0846F1012927757D001FA960 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0846F1022927758A001FA960 /* OpenMapDirections.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +221,10 @@
 			dependencies = (
 			);
 			name = MyContact;
+			packageProductDependencies = (
+				0846F0E929276D47001FA960 /* SDWebImage */,
+				0846F0EB29276D47001FA960 /* SDWebImageMapKit */,
+			);
 			productName = MyContact;
 			productReference = 0846F0B529276CBB001FA960 /* MyContact.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +274,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0846F0B429276CBB001FA960 = {
 						CreatedOnToolsVersion = 14.1;
@@ -215,6 +298,9 @@
 				Base,
 			);
 			mainGroup = 0846F0AC29276CBB001FA960;
+			packageReferences = (
+				0846F0E829276D47001FA960 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 0846F0B629276CBB001FA960 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0846F0C529276CBC001FA960 /* LaunchScreen.storyboard in Resources */,
 				0846F0C229276CBC001FA960 /* Assets.xcassets in Resources */,
-				0846F0C029276CBB001FA960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0846F0BD29276CBB001FA960 /* ViewController.swift in Sources */,
+				0846F0FE29276F9C001FA960 /* DetailViewController.swift in Sources */,
+				0846F0F829276F1F001FA960 /* ContactTableViewCell.swift in Sources */,
+				0846F0F429276DBD001FA960 /* Contacts.swift in Sources */,
+				0846F0FC29276F51001FA960 /* DetailContactViewModel.swift in Sources */,
+				0846F0BD29276CBB001FA960 /* KontakViewController.swift in Sources */,
 				0846F0B929276CBB001FA960 /* AppDelegate.swift in Sources */,
+				0846F0FA29276F39001FA960 /* ContactViewModel.swift in Sources */,
 				0846F0BB29276CBB001FA960 /* SceneDelegate.swift in Sources */,
+				0846F1032927758A001FA960 /* OpenMapDirections.swift in Sources */,
+				0846F0F629276E08001FA960 /* APICallerNative.swift in Sources */,
+				0846F10029277195001FA960 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +387,6 @@
 			targetProxy = 0846F0D629276CBC001FA960 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0846F0BE29276CBB001FA960 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0846F0BF29276CBB001FA960 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0846F0C329276CBC001FA960 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0846F0C429276CBC001FA960 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0846F0DD29276CBC001FA960 /* Debug */ = {
@@ -437,11 +510,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V32F95432N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyContact/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,13 +535,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V32F95432N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyContact/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,6 +552,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wishihab.MyContact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,6 +585,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V32F95432N;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
@@ -545,6 +621,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V32F95432N;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wishihab.MyContactUITests;
@@ -596,6 +673,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0846F0E829276D47001FA960 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0846F0E929276D47001FA960 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0846F0E829276D47001FA960 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0846F0EB29276D47001FA960 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0846F0E829276D47001FA960 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0846F0AD29276CBB001FA960 /* Project object */;
 }
